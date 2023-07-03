@@ -1,0 +1,14 @@
+{
+  "user": [
+    {
+      "username": "vishva03",
+      "name": "vishva",
+      "phone": "6369644476",
+      "gender": "male",
+      "email": "vishvasekarsvmy@gmail.com",
+      "password": "1111",
+      "confirmPassword": "1111",
+      "id": 1
+    }
+  ]
+}

@@ -3,7 +3,10 @@ import Home from "./Home/Home";
 import About from "./About/About";
 import SignUp from "./Signup/Signup";
 import Signin from "./Signin/Signin";
+import Cart from "./Cart/Cart";
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import Container from "./Container/Container";
+import Supplier from "./Supplier/Supplier";
 
 function App() {
   const routerdata=[
@@ -15,7 +18,13 @@ function App() {
     {path:"/Signin",
     element:<Signin/>},
     {path:"/Signup",
-    element:<SignUp/>}
+    element:<SignUp/>},
+  { path :"/container",
+    element:<Container/>},
+    {path:"/supplier",
+  element:<Supplier/>},
+  {path:"/cart",
+element:<Cart/>}
     
    ]
 

@@ -1,0 +1,240 @@
+.header{
+    box-sizing: border-box;
+}
+.head_1{
+    height: 75px;
+    width: 1280px;
+    border-bottom: 1.5px solid rgb(139, 139, 163);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.head_2{
+     height: 100%;
+     width: 1080px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.header_1{
+    padding: 0px;
+    height: 50px;
+}
+.header_2{
+    height: 100%;
+     width: 1080px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.left{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    width: 60%;
+
+}
+
+.text_1{
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: left;
+    cursor: pointer;
+    color: rgb(94, 8, 80);
+}
+.inpbox{
+    display: flex;
+    align-items: center;
+    border: 1px solid  rgb(139, 139, 163);
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+#inpbox_1{
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.right{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.text_2{
+    height: 75px;
+    width: 100px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.text_2:hover{
+    color: rgb(159, 32, 137);
+    border-bottom: 2px solid rgb(159, 32, 137);
+}
+.text_3{
+    width: 100px;
+    text-align: center;
+    border-left: 2px solid rgb(139, 139, 163);
+    border-right: 2px solid rgb(139, 139, 163);
+}
+.text_4{
+    display: flex;
+    margin-left: 20px;
+    height: 55px;
+}
+.cart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+}
+.cart_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 65px;
+    cursor: pointer;
+}
+.cart_2:hover{
+    color: rgb(159, 32, 137);
+    border-bottom: 2px solid rgb(159, 32, 137);
+    height: 64px;
+}
+.h2txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Mier book;
+}
+.h2txt:hover{
+    color: rgb(159, 32, 137);
+    border-bottom: 2px solid rgb(159, 32, 137);
+}
+/* conditional rendering */
+.downloadapp{
+    height: 180px;
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 10px;
+    bottom: 50px;
+    left: 720px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.dwntxt{
+    color: rgb(82, 82, 86);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+.dwntxt_1{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.applink{
+    margin: 5px;
+}
+.imglink{
+
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.sign_up{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+    left: 920px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.signup_txt {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+.signup_txt_1{
+    font-size: small;
+}
+
+.signup_btn {
+    width: 140px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(159, 32, 137);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.orders {
+    
+    border-top: 2px solid rgb(139, 139, 163);
+}
+.orders_1{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 40px;
+    width: 170px;
+    cursor: pointer;
+}
+
+.orders span {
+    margin-right: 10px;
+}
+
+.items{
+    width: 1080px;
+    background-color: #fff;
+    position: relative;
+    left: 100px;
+    display: flex;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.items_1{
+    color: rgb(159, 32, 137);
+    cursor: pointer;
+    margin-left: 30px;
+}
+.items_2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.items_3{
+    color:rgb(139, 139, 163) ;
+    margin-bottom: 3px;
+}
+.items_3:hover{
+    color: rgb(62, 62, 67);
+    cursor: pointer;
+}
