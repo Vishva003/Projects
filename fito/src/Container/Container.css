@@ -1,13 +1,10 @@
 .container_items{
     display: flex;
-    background-color: aquamarine;
+    background-color: white;
+    box-sizing: border-box;
 }
-.left_items{
-     background-color: aqua;
-     width: 250px;
-     display: flex;
-     flex-direction: column;
-     border-radius: 10px;
+html {
+  scroll-behavior: smooth;
 }
 .search-icon{
     position: relative;
@@ -20,13 +17,22 @@
 .product_item1{
     height: 300px;
     width: 200px;
-    border-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
     white-space: nowrap;
     overflow: hidden;
-    margin-top: 10px;
-    background-color: #fff;
-    border: 1px solid black;
+    margin-top: 40px;
+    background-color:#efeded;
+    box-shadow: 5px 5px 2px 2px rgba(0,0,0, 0.3);
+    animation-name: ani;
+    animation-duration: 2s;
 }
+
+.product_item1:hover{
+
+    background-color:  white;
+}
+
 .product_detials{
     margin-left: 15px;
 }
@@ -46,25 +52,70 @@
 }
 .productrating{
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .productimg{
     height: 150px;
-    margin-top: 10px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    width: 100%;
+    /* margin-top: 10px; */
+    box-sizing: border-box;
+   
+}
+@keyframes ani{
+    from{ transform: translateX(250%); }
+    
+}
+.productimg_1{
+    width: 100% ;
+    height: 100%;
+    object-fit: fill;
+}
+.addcart{
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color:rgb(117, 183, 230) ;
 }
 .spa{
-    padding: 3px;
-    padding-left: 10px ;
-    padding-right: 10px;
-    background-color: rgb(8, 106, 51);
+    width: 55px;
+    height: 27px;
+    padding: auto;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ratstr{
     color: #fff;
 }
 .right_items{
     display: grid;
-    gap: 1rem;
-     grid-template-columns: auto auto auto auto;
+    margin-left: 30px;
+    gap: 3rem;
+    grid-template-columns: auto auto auto auto;
+    box-sizing: border-box;
+    
+    /* display: flex;
+    flex-wrap:  wrap;
+    margin-left: 50px;
+    justify-content: space-between; */
+   
+     
 }
+.left_items{
+     display: flex;
+     flex-direction: column;
+     border-radius: 10px;
+}
+
+.sidebar{
+ 
+    /* background-color: #fff;
+    position: sticky;
+    top: 125px; */
+    
+}
+

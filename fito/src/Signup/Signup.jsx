@@ -14,11 +14,11 @@ const SignupPage = () => {
     });
     const[datas,setDatas]=useState([])
     useEffect(()=>{
-        axios.get('http://localhost:4000/user')
+        axios.get('http://localhost:3000/user')
         .then((response)=>{
             setDatas(response.data)
         })
-     })
+     },[])
     const navigate = useNavigate();
 
     const handleChange = (e) => {
@@ -35,7 +35,7 @@ const SignupPage = () => {
             alert('User already exists');
         }
         else {
-            axios.post('http://localhost:4000/user', formData)
+            axios.post('http://localhost:3000/user', formData)
                 .then((res) => {
                     console.log(res)
                 })
@@ -49,8 +49,10 @@ const SignupPage = () => {
     };
 
     return (
+        <>
+        
         <form onSubmit={handleSubmit}>
-           
+            <h2>SIGN UP </h2>
             <label>
                 Username:
                 <input
@@ -81,6 +83,7 @@ const SignupPage = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
+                    maxLength={10}
                 />
             </label>
             <br />
@@ -127,8 +130,10 @@ const SignupPage = () => {
                 />
             </label>
             <br />
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign Up</button><br />
+            <a  href='http://localhost:3001/signin'>Already a User/Signin</a>
         </form>
+        </> 
     );
 };
 

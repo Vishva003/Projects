@@ -1,172 +1,95 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios';
+import React, {useEffect, useState}from 'react'
 import './Container.css'
-import { CiSearch } from "react-icons/ci";
 import { AiFillStar } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import Sidebar from '../Sidebar/Sidebar';
+import { useNavigate } from 'react-router-dom';
 
-const Container = () => {
 
-
-  const [selectedValue, setSelectedValue] = useState('');
-  const [checkedItems, setCheckedItems] = useState({});
-  const [display, setdisplay] = useState(false)
-  const [products, setproducts] = useState([])
-  function handledisplay() {
-    setdisplay(!display);
-  }
-  const items = ['Analog Watches',
-    'Bangles & Bracelets',
-    ' Bedsheets',
-    ' Bike Covers',
-    ' Blouses',
-    'Bluetooth Headphones',
-    'Bra',
-    'Car Covers',
-    'Cups & Mugs',
-    'Dresses',
-    'Dupatta Sets',
-    'Dupattas',
-    'Earrings & Studs',
-    'Flipflops & Slippers',
-    'Gowns',
-    ' Hair Oil',
-    'Handbags',
-    'Idols & Figurines',
-    'Jeans',
-    'Jewellery Set',
-    'Kitchen Storage',
-    'Kitchen Tools',
-    ' Kurta Sets',
-    'Kurtis',
-    'Lehengas',
-    'Lipsticks',
-    'Lunchbox & Bottles',
-    'Mangalsutras',
-    'Men Jewellery',
-    'Mobile Accessories',
-    ' Mobile Cases & Covers',
-    'Motorcycle Covers',
-    'Nighties',
-    'Panty',
-    'Pendants & Lockets',
-    'Puja Articles',
-    'Rings',
-    'Sarees',
-    'Shirts',
-    'Shoes',
-    'Shorts',
-    'Socks',
-    'Suits & Dress Materials',
-    'Sunglasses',
-    'Sweater and Sweatshirts',
-    ' T-shirts',
-    'Tops and Bottom sets',
-    'Tops And Tunics',
-    'Wall Stickers & Murals',
-    'Women Lehengas'];
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
-  };
-
-  const handleCheck = (event) => {
-    setCheckedItems({
-      ...checkedItems,
-      [event.target.name]: event.target.checked,
-    });
-  };
+const Container = ({ product, handleAddProduct, search, handleCategory, handlePrice, sort, setProductCount,isSignedIn }) => {
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedPriceRange, setSelectedPriceRange] = useState(null);
+  const navigate = useNavigate();
+  
   useEffect(() => {
-    axios.get('http://localhost:3000/storedetials')
-      .then((response) => {
-        setproducts(response.data)
-        console.log(response.data)
-      })
-      .catch((res) => {
-        console.log(res)
-      })
-  })
+    if (!isSignedIn) {
+      navigate('/signin');
+    }
+  }, [isSignedIn,navigate]);
 
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+    handleCategory(event);
+  }
 
+  const handlePriceChange = (event) => {
+    setSelectedPriceRange(event.target.value);
+    handlePrice(event);
+  }
+
+  let filteredProducts = product.filter((item) => {
+    let categoryMatch = selectedCategory === '' || item.category.toLowerCase() === selectedCategory;
+    let priceMatch = true;
+    if (selectedPriceRange) {
+      let [minPrice, maxPrice] = selectedPriceRange.split('-').map(Number);
+      priceMatch = item.price >= minPrice && item.price <= maxPrice;
+    }
+    let searchMatch = search.toLowerCase() === '' || item.category.toLowerCase().includes(search);
+    return categoryMatch && priceMatch && searchMatch;
+  });
+
+  if (sort === 'relevance') {
+    // Sort by relevance
+  } else if (sort === 'freeDelivery') {
+    filteredProducts = filteredProducts.filter(item => item.delivery);
+  } else if (sort === 'rating') {
+    filteredProducts.sort((a, b) => b.rating - a.rating);
+  } else if (sort === 'costLowToHigh') {
+    filteredProducts.sort((a, b) => a.price - b.price);
+  } else if (sort === 'costHighToLow') {
+    filteredProducts.sort((a, b) => b.price - a.price);
+  }
+
+  // Update product count
+  useEffect(() => {
+    if (setProductCount) {
+      setProductCount(filteredProducts.length);
+    }
+  }, [filteredProducts.length, setProductCount]);
+  
 
   return (
     <>
+   
       <div className="container_items">
-        <div className="left_items">
-          <div className="products_head">Products For You</div>
-          <div className="sort_by">
-            <select value={selectedValue} onChange={handleChange}>
-              <option value="" disabled>
-                Sort By : {selectedValue || ''}
-              </option>
-              <option value="Relevance">Relevance</option>
-              <option value="New Arrivals">New Arrivals</option>
-              <option value="Price (High To Low)">Price (High To Low)</option>
-              <option value="Price (Low To High)">Price (Low To High)</option>
-              <option value="Ratings">Ratings</option>
-              <option value="Discount">Discount</option>
-            </select>
-          </div>
-          <div className="filters">
-            <div className="filter_name">FILTERS</div>
-            <div className="filter_items">1000+ Products</div>
-          </div>
-          <div className="category">
-            <div className="catg_name" onClick={handledisplay}>Category</div>
-            {display &&
-              <div className="catg_items">
-                <div className="search_inp">
-                  <span><CiSearch className='search_icon' /></span>
-                  <input type="search" placeholder='search' ></input>
-                </div>
-                {items.map((item) => (
-                  <div className="label_data">
-                    <label key={item} style={{ color: checkedItems[item] ? 'blue' : '' }}>
-                      <input
-                        type="checkbox"
-                        name={item}
-                        checked={checkedItems[item]}
-                        onChange={handleCheck}
-                      />
-                      {item}
-                    </label>
-                  </div>
-                ))}
-              </div>
-
-
-            }
-          </div>
+        <div className='left_items'>
+          <Sidebar handleCategory={handleCategoryChange} handlePrice={handlePriceChange} className="sidebar"/>
         </div>
         <div className="right_items">
-          {
-            products.map((product) => {
-              return (
-                <div className="product_item1" key={product.id}>
-                  <div className="productimg">
-                    <img src={product.image} alt="" height={"100%"} width={"100%"} />
-                  </div>
-                  <div className="product_detials">
-                    <div className="product_name"> {product.name}</div>
-                    <div className="productprice">
-                      ₹  {product.price} <span className="onwards">onwards</span>
-                    </div>
-                    <div className="onwards">Free Delivery</div>
-                    <div className="productrating">
-                      <span className='spa'> {product.rating}
-                        <AiFillStar className='ratstr' />
-                      </span>
-                      
-                    </div>
-                  </div>
-                  <Link to={`/cart`}>devv</Link>
+          {filteredProducts.map((product) => {
+            return (
+              <div className="product_item1" key={product.id} >
+                <div className="productimg">
+                  <img src={product.image} alt="image" className='productimg_1'/>
                 </div>
-              )
-            })
-          }
+                <div className="product_detials">
+                  <div className="product_name"> {product.name}</div>
+                  <div className="productprice">
+                    ₹  {product.price} <span className="onwards">onwards</span>
+                  </div>
+                  <div className="onwards">Free Delivery</div>
+                  <div className="productrating">
+                    <div className='spa' style={{ backgroundColor: product.rating > 4.0 ? "green" : product.rating < 3.0 ? "red" : "orange" }}> {product.rating}
+                      <AiFillStar className='ratstr' />
+                    </div>
+                    <button onClick={() => handleAddProduct(product)} className='addcart'>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </>
   )
 }
-
 export default Container;

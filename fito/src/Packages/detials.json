@@ -1,155 +1,339 @@
 {
-    "storedetials":[
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"1"
-        },
-        {
-            "name":" Classic Kids Unisex Black Rubber Digital Watch",
-            "price":"205",
-            "rating": "3.5",
-            "image":"https://images.meesho.com/images/products/45496537/e089y_512.webp",
-            "delivery":"Free Delivery",
-            "category":"watch",
-            "gender":"female , male",
-            "id":"2"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"2"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"3"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"4"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"5"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"6"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"7"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"8"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"9"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"10"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"11"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"12"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"12"
-        },
-        {
-            "name":"Women Usa Style Trending Embroidery kaftan",
-            "price":"464",
-            "rating": "3.6",
-            "image":"https://images.meesho.com/images/products/199717380/m51p4_512.webp",
-            "delivery":"Free Delivery",
-            "category":"ssdv",
-            "gender":"female",
-            "id":"13"
-        }
-        
-    ]
+  "user": [
+    {
+      "username": "siva",
+      "name": "Siva",
+      "phone": "1111",
+      "gender": "male",
+      "email": "siva001@gmail.com",
+      "password": "1111",
+      "confirmPassword": "1111",
+      "id": 1
+    },
+    {
+      "username": "raja",
+      "name": "RAJA",
+      "phone": "8734673278",
+      "gender": "male",
+      "email": "raja@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "id": 2
+    },
+    {
+      "username": "dev@123",
+      "name": "Dev",
+      "phone": "6397865674",
+      "gender": "male",
+      "email": "dev123@gmail.com",
+      "password": "0000",
+      "confirmPassword": "0000",
+      "id": 3
+    }
+  ],
+  "storedetials": [
+    {
+      "name": " Trendy Men Analog Watches",
+      "price": "464",
+      "rating": "3.6",
+      "image": "https://images.meesho.com/images/products/94757210/btndo_400.webp",
+      "delivery": "Free Delivery",
+      "category": "watch",
+      "gender": "male",
+      "id": "1"
+    },
+    {
+      "name": " Classic Kids Unisex Black Rubber Digital Watch",
+      "price": "205",
+      "rating": "3.5",
+      "image": "https://images.meesho.com/images/products/45496537/e089y_512.webp",
+      "delivery": "Free Delivery",
+      "category": "watch",
+      "gender": "female , male",
+      "id": "2"
+    },
+    {
+      "name": "TRENDY WOMEN MULTICOLOR ALLOY CASUAL ANALOG WATCH",
+      "price": "158",
+      "rating": "3.8",
+      "image": "https://images.meesho.com/images/products/223430320/z7xlg_400.webp",
+      "delivery": "Free Delivery",
+      "category": "watch",
+      "gender": "female",
+      "id": "3"
+    },
+    {
+      "name": "Trendy watch",
+      "price": "268",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/85745247/ubevs_512.webp",
+      "delivery": "Free Delivery",
+      "category": "watch",
+      "gender": "male",
+      "id": "4"
+    },
+    {
+      "name": " New Design Sahbag Bracelets For Lover Men Women Love Chain Link Bangle Charm Bracelet",
+      "price": "154",
+      "rating": "4.1",
+      "image": "https://images.meesho.com/images/products/279710152/g4quu_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bracelets & bangles",
+      "gender": "female,male",
+      "id": "5"
+    },
+    {
+      "name": "Women bracelets",
+      "price": "224",
+      "rating": "3.6",
+      "image": "https://images.meesho.com/images/products/289915990/hkwju_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bracelets & bangles",
+      "gender": "female",
+      "id": "6"
+    },
+    {
+      "name": " PREMIUM QUALITY MICROPLATED DAILY WEAR BANGLES SET",
+      "price": "314",
+      "rating": "3.6",
+      "image": "https://images.meesho.com/images/products/226598888/27sk6_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bracelets & bangles",
+      "gender": "female",
+      "id": "7"
+    },
+    {
+      "name": "KoziCare",
+      "price": "204",
+      "rating": "4.2",
+      "image": "https://images.meesho.com/images/products/52609969/lnakw_400.webp",
+      "delivery": "Free Delivery",
+      "category": "soap",
+      "gender": "female ,male",
+      "id": "8"
+    },
+    {
+      "name": "LA Organo Glutathione Skin Brightening & Whitening Beauty Soap",
+      "price": "262",
+      "rating": "3.2",
+      "image": "https://images.meesho.com/images/products/133695077/av4ap_400.webp",
+      "delivery": "Free Delivery",
+      "category": "soap",
+      "gender": " male,female",
+      "id": "9"
+    },
+    {
+      "name": "Trendy Bedsheets",
+      "price": "252",
+      "rating": "3.8",
+      "image": "https://images.meesho.com/images/products/160684918/kt13b_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bedsheet",
+      "id": "10"
+    },
+    {
+      "name": "Fasionable Bedsheet",
+      "price": "324",
+      "rating": "4.3",
+      "image": "https://images.meesho.com/images/products/131091371/fi5q3_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bedsheets",
+      "id": "11"
+    },
+    {
+      "name": "Attractive Bedsheet",
+      "price": "284",
+      "rating": "4.1",
+      "image": "https://images.meesho.com/images/products/75364394/q3z9b_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bedsheets",
+      "id": "12"
+    },
+    {
+      "name": "New Bike Cover",
+      "price": "281",
+      "rating": "3.7",
+      "image": "https://images.meesho.com/images/products/79110058/wejny_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bike covers",
+      "id": "13"
+    },
+    {
+      "name": "Hero Splender plus bike cover",
+      "price": "326",
+      "rating": "4.0",
+      "image": "https://images.meesho.com/images/products/174151626/gyy0w_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bike covers",
+      "id": "14"
+    },
+    {
+      "name": "Graceful bike cover",
+      "price": "421",
+      "rating": "3.8",
+      "image": "https://images.meesho.com/images/products/187940837/gydfa_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bike cover",
+      "id": "15"
+    },
+    {
+      "name": "Airpods pro",
+      "price": "589",
+      "rating": "4.1",
+      "image": "https://images.meesho.com/images/products/131089783/uskbv_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bluetooth headphones",
+      "id": "16"
+    },
+    {
+      "name": "bluetooth headphones",
+      "price": "679",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/12543174/jbcog_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bluetooth headphones",
+      "id": "17"
+    },
+    {
+      "name": "headsets",
+      "price": "289",
+      "rating": "3.8",
+      "image": "https://images.meesho.com/images/products/276477723/z4vc0_400.webp",
+      "delivery": "Free Delivery",
+      "category": "bluetooth headphones",
+      "id": "18"
+    },
+    {
+      "name": "Unique car covers",
+      "price": "849",
+      "rating": "3.8",
+      "image": "https://images.meesho.com/images/products/128690173/sbnrv_400.webp",
+      "delivery": "Free Delivery",
+      "category": "car covers",
+      "id": "19"
+    },
+    {
+      "name": "Classic car covers",
+      "price": "689",
+      "rating": "4.1",
+      "image": "https://images.meesho.com/images/products/278259730/do0bf_400.webp",
+      "delivery": "Free Delivery",
+      "category": "car covers",
+      "id": "20"
+    },
+    {
+      "name": "fancy cups and mugs",
+      "price": "499",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/72531466/xopli_400.webp",
+      "delivery": "Free Delivery",
+      "category": "cups & mugs",
+      "id": "21"
+    },
+    {
+      "name": "New Cups and Mugs",
+      "price": "279",
+      "rating": "4.0",
+      "image": "https://images.meesho.com/images/products/242787288/ct5nj_400.webp",
+      "delivery": "Free Delivery",
+      "category": "cups & mugs",
+      "id": "22"
+    },
+    {
+      "name": "Cups and Mugs",
+      "price": "469",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/155403127/dtp6j_400.webp",
+      "delivery": "Free Delivery",
+      "category": "cups & mugs",
+      "id": "23"
+    },
+    {
+      "name": " Urbane Latest Women Dresses",
+      "price": "399",
+      "rating": "4.0",
+      "image": "https://images.meesho.com/images/products/103713364/0ioi6_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dresses",
+      "gender": "female",
+      "id": "24"
+    },
+    {
+      "name": "premium quility Dresses for clothes",
+      "price": "489",
+      "rating": "4.2",
+      "image": "https://images.meesho.com/images/products/198939592/hqnt6_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dresses",
+      "gender": "female",
+      "id": "25"
+    },
+    {
+      "name": "Stylish Beautiful Printed Cotton Frock And Jacket Dresses For Girls",
+      "price": "259",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/193008379/kycpz_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dresses kids",
+      "id": "26"
+    },
+    {
+      "name": "Trendy women",
+      "price": "399",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/86375109/vgpf5_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dresses",
+      "gender": "female",
+      "id": "27"
+    },
+    {
+      "name": "La Feminae cotton blend dupatta for women",
+      "price": "299",
+      "rating": "3.8",
+      "image": "https://images.meesho.com/images/products/173712258/ogszc_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dupattas",
+      "gender": "female",
+      "id": "28"
+    },
+    {
+      "name": " Cotton Blend Solid Dupatta For Women Pack Of 3",
+      "price": "499",
+      "rating": "3.5",
+      "image": "https://images.meesho.com/images/products/138333150/uluam_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dupattas",
+      "gender": "female",
+      "id": "29"
+    },
+    {
+      "name": "Girl's And Women's Stylish Printed Multicolored Dupatta Pack of 3",
+      "price": "599",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/131718253/80mzw_400.webp",
+      "delivery": "Free Delivery",
+      "category": "dupattas",
+      "gender": "female",
+      "id": "30"
+    },
+    {
+      "name": "Graceful Wall Clocks",
+      "price": "459",
+      "rating": "4.0",
+      "image": "https://images.meesho.com/images/products/25515256/a6300_400.webp",
+      "delivery": "Free Delivery",
+      "category": "wall clock",
+      "id": "31"
+    },
+    {
+      "name": "Unique wall clocks",
+      "price": "399",
+      "rating": "3.9",
+      "image": "https://images.meesho.com/images/products/9029651/72c36_400.webp",
+      "delivery": "Free Delivery",
+      "category": "wall clock",
+      "id": "32"
+    }
+  ]
 }

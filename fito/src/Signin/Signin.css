@@ -1,23 +1,65 @@
-body {
-    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg');
-    background-size: cover;
-  }
+
   
   form {
+    border: 0px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: honeydew;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 50px;
+    animation-name: move;
+    animation-duration: 5s;
   }
-  
-  input {
-    margin-bottom: 10px;
+  @keyframes move {
+    from {
+      opacity: 0;
+      top: -50%;
+    }
+    to {
+      opacity:100%;
+      bottom:100%;
+    }
   }
-  
-  button {
-    margin-top: 10px;
+ ._captcha{
+  border: 1px solid black;
+  height: 20px;
+  width: 80px;
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  pointer-events: none;
+  margin-right: 10px;
+ }
+ @keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}
   
+
+  
+  
+ ._refreshicon{
+  position: relative;
+  bottom: 2.5px;
+  right: 7px;
+  color: blue;
+  height: 20px;
+  width: 20px;
+ }
+ 
