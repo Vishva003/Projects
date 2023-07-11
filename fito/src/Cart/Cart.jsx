@@ -31,6 +31,7 @@ const Cart = ({
           : item
       )
     );
+    if (product.quantity === 1){ handleRemoveProduct(product)};
   };
 
   const handleClear = () => {
