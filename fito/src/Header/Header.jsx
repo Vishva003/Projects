@@ -46,7 +46,7 @@ const Header = ({ cartItems, handlesearch, handleSort, productCount,isSignedIn,s
             <div className="head_2">
               <div className="left">
                 <div className="text_1">
-                  santhusuuu
+                  fito
                 </div>
                 <div className="inpbox">
                   <span><CiSearch style={{ height: "25px", width: "25px", color: "rgb(139, 139, 163)" }} /></span>
